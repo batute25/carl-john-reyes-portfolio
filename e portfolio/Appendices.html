@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appendices</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* BUTTON */
+.view-btn {
+    padding: 8px 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.view-btn:hover {
+    background: #0056b3;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.modal-content {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+/* EXIT BUTTON */
+.close-btn {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.left { left: 20px; }
+.right { right: 20px; }
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>OJT Portfolio</h2>
+</nav>
+
+<div class="side-nav">
+    <h3>Navigation</h3>
+    <a href="index.html" class="chapter-btn">⬅ Back to Main</a>
+</div>
+
+<div class="main-content">
+
+<section>
+
+<h2>Appendices</h2>
+
+<!-- A -->
+<div class="chapter-box">
+    <h3>Appendix A - Evaluation Form</h3>
+    <button class="view-btn" onclick="openModal('modalA', 0)">View Document</button>
+</div>
+<div id="modalA" class="modal">
+    <span class="close-btn" onclick="closeModal('modalA')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalA', -1)">❮</button>
+    <img id="modalA-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalA', 1)">❯</button>
+</div>
+
+<!-- B -->
+<div class="chapter-box">
+    <h3>Appendix B - Registration Form</h3>
+    <button class="view-btn" onclick="openModal('modalB', 0)">View Document</button>
+</div>
+<div id="modalB" class="modal">
+    <span class="close-btn" onclick="closeModal('modalB')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalB', -1)">❮</button>
+    <img id="modalB-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalB', 1)">❯</button>
+</div>
+
+<!-- C -->
+<div class="chapter-box">
+    <h3>Appendix C - Validated ID</h3>
+    <button class="view-btn" onclick="openModal('modalC', 0)">View Document</button>
+</div>
+<div id="modalC" class="modal">
+    <span class="close-btn" onclick="closeModal('modalC')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalC', -1)">❮</button>
+    <img id="modalC-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalC', 1)">❯</button>
+</div>
+
+<!-- D -->
+<div class="chapter-box">
+    <h3>Appendix D - Parent's Consent</h3>
+    <button class="view-btn" onclick="openModal('modalD', 0)">View Document</button>
+</div>
+<div id="modalD" class="modal">
+    <span class="close-btn" onclick="closeModal('modalD')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalD', -1)">❮</button>
+    <img id="modalD-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalD', 1)">❯</button>
+</div>
+
+<!-- E -->
+<div class="chapter-box">
+    <h3>Appendix E - Medical Certificate</h3>
+    <button class="view-btn" onclick="openModal('modalE', 0)">View Document</button>
+</div>
+<div id="modalE" class="modal">
+    <span class="close-btn" onclick="closeModal('modalE')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalE', -1)">❮</button>
+    <img id="modalE-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalE', 1)">❯</button>
+</div>
+
+<!-- F -->
+<div class="chapter-box">
+    <h3>Appendix F - Certificate of Good Moral Character</h3>
+    <button class="view-btn" onclick="openModal('modalF', 0)">View Document</button>
+</div>
+<div id="modalF" class="modal">
+    <span class="close-btn" onclick="closeModal('modalF')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalF', -1)">❮</button>
+    <img id="modalF-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalF', 1)">❯</button>
+</div>
+
+<!-- G -->
+<div class="chapter-box">
+    <h3>Appendix G - Application Letter</h3>
+    <button class="view-btn" onclick="openModal('modalG', 0)">View Document</button>
+</div>
+<div id="modalG" class="modal">
+    <span class="close-btn" onclick="closeModal('modalG')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalG', -1)">❮</button>
+    <img id="modalG-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalG', 1)">❯</button>
+</div>
+
+<!-- H -->
+<div class="chapter-box">
+    <h3>Appendix H - Endorsement Letter</h3>
+    <button class="view-btn" onclick="openModal('modalH', 0)">View Document</button>
+</div>
+<div id="modalH" class="modal">
+    <span class="close-btn" onclick="closeModal('modalH')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalH', -1)">❮</button>
+    <img id="modalH-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalH', 1)">❯</button>
+</div>
+
+<!-- J -->
+<div class="chapter-box">
+    <h3>Appendix J - Daily Time Record</h3>
+    <button class="view-btn" onclick="openModal('modalJ', 0)">View Document</button>
+</div>
+<div id="modalJ" class="modal">
+    <span class="close-btn" onclick="closeModal('modalJ')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalJ', -1)">❮</button>
+    <img id="modalJ-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalJ', 1)">❯</button>
+</div>
+
+<!-- K -->
+<div class="chapter-box">
+    <h3>Appendix K - Certificate of Completion</h3>
+    <button class="view-btn" onclick="openModal('modalK', 0)">View Document</button>
+</div>
+<div id="modalK" class="modal">
+    <span class="close-btn" onclick="closeModal('modalK')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalK', -1)">❮</button>
+    <img id="modalK-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalK', 1)">❯</button>
+</div>
+
+<!-- L -->
+<div class="chapter-box">
+    <h3>Appendix L - Certificate of Clearance</h3>
+    <button class="view-btn" onclick="openModal('modalL', 0)">View Document</button>
+</div>
+<div id="modalL" class="modal">
+    <span class="close-btn" onclick="closeModal('modalL')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalL', -1)">❮</button>
+    <img id="modalL-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalL', 1)">❯</button>
+</div>
+
+<!-- M -->
+<div class="chapter-box">
+    <h3>Appendix M - Seminar Photos</h3>
+    <button class="view-btn" onclick="openModal('modalM', 0)">View Document</button>
+</div>
+<div id="modalM" class="modal">
+    <span class="close-btn" onclick="closeModal('modalM')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalM', -1)">❮</button>
+    <img id="modalM-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalM', 1)">❯</button>
+</div>
+
+<!-- N -->
+<div class="chapter-box">
+    <h3>Appendix N - Office Works Photos</h3>
+    <button class="view-btn" onclick="openModal('modalN', 0)">View Document</button>
+</div>
+<div id="modalN" class="modal">
+    <span class="close-btn" onclick="closeModal('modalN')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalN', -1)">❮</button>
+    <img id="modalN-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalN', 1)">❯</button>
+</div>
+
+<!-- O -->
+<div class="chapter-box">
+    <h3>Appendix O - Code of Ethics</h3>
+    <button class="view-btn" onclick="openModal('modalO', 0)">View Document</button>
+</div>
+<div id="modalO" class="modal">
+    <span class="close-btn" onclick="closeModal('modalO')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalO', -1)">❮</button>
+    <img id="modalO-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalO', 1)">❯</button>
+</div>
+
+<!-- P -->
+<div class="chapter-box">
+    <h3>Appendix P - Curriculum Vitae</h3>
+    <button class="view-btn" onclick="openModal('modalP', 0)">View Document</button>
+</div>
+<div id="modalP" class="modal">
+    <span class="close-btn" onclick="closeModal('modalP')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalP', -1)">❮</button>
+    <img id="modalP-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalP', 1)">❯</button>
+</div>
+
+<!-- Q -->
+<div class="chapter-box">
+    <h3>Appendix Q - Portfolio Evaluation</h3>
+    <button class="view-btn" onclick="openModal('modalQ', 0)">View Document</button>
+</div>
+<div id="modalQ" class="modal">
+    <span class="close-btn" onclick="closeModal('modalQ')">✖</span>
+    <button class="nav-btn left" onclick="changeImage('modalQ', -1)">❮</button>
+    <img id="modalQ-img" class="modal-content">
+    <button class="nav-btn right" onclick="changeImage('modalQ', 1)">❯</button>
+</div>
+
+</section>
+
+</div>
+
+<script>
+let images = {
+    modalA: ["evaluationform.jpg"],
+    modalB: ["registrationform.jpg"],
+    modalC: ["validated1.jpg", "validated2.jpg"],
+    modalD: ["consent.jpg"],
+    modalE: ["med1.jpg", "med2.jpg"],
+
+    modalF: ["goodmoral.jpg"],
+    modalG: ["applicationletter.jpg"],
+    modalH: ["endorsment1.jpg","endorsment2.jpg"],
+    modalJ: ["january.jpg", "february.jpg","march.jpg"],
+    modalK: ["completion.jpg"],
+    modalL: ["clearance.jpg"],
+    modalM: ["seminar1.jpg", "seminar2.jpg"],
+   modalN: [
+        "office1.jpg","office2.jpg","office3.jpg","office4.jpg","office5.jpg",
+        "office6.jpg","office7.jpg","office8.jpg","office9.jpg","office10.jpg",
+        "office11.jpg","office12.jpg","office13.jpg","office14.jpg","office15.jpg",
+        "office16.jpg","office17.jpg","office18.jpg","office19.jpg","office20.jpg"
+    ],
+    modalO: ["codeofethics.png"],
+    modalP: ["cv1.jpg", "cv2.jpg"],
+    modalQ: ["evaluation.jpg"]
+};
+
+let index = {};
+Object.keys(images).forEach(key => index[key] = 0);
+
+function openModal(id, i) {
+    index[id] = i;
+    document.getElementById(id).style.display = "flex";
+    document.getElementById(id + "-img").src = images[id][i];
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function changeImage(id, step) {
+    index[id] += step;
+
+    if (index[id] < 0) index[id] = images[id].length - 1;
+    if (index[id] >= images[id].length) index[id] = 0;
+
+    document.getElementById(id + "-img").src = images[id][index[id]];
+}
+</script>
+
+</body>
+</html>

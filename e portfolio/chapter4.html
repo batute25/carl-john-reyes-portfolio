@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter IV - Assessment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>OJT Portfolio</h2>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="side-nav">
+
+    <h3>Navigation</h3>
+
+    <a href="index.html" class="chapter-btn">⬅ Back to Main</a>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+<section id="chapter4">
+
+<h2>Chapter IV: Assessment</h2>
+
+<p>
+This chapter presents the student internship evaluation conducted during the On-the-Job Training period.
+The evaluation reflects the trainee’s performance, skills, discipline, professionalism, and overall contribution
+during the internship at the BSIT Department Laboratory.
+</p>
+
+<!-- EVALUATION BOX -->
+<div class="chapter-box">
+
+<h3>Student Internship Performance Evaluation</h3>
+
+<p>
+<strong>Institution:</strong> BSIT Department × Occidental Mindoro State College
+</p>
+
+<table>
+
+<tr>
+    <th>Student Name</th>
+    <td>Carl John A. Reyes</td>
+</tr>
+
+<tr>
+    <th>Student ID</th>
+    <td>MA22-IT-02753</td>
+</tr>
+
+<tr>
+    <th>Program/Course</th>
+    <td>Bachelor of Science in Information Technology</td>
+</tr>
+
+<tr>
+    <th>Academic Year</th>
+    <td>2025-2026</td>
+</tr>
+
+<tr>
+    <th>Internship Start Date</th>
+    <td>January 26, 2026</td>
+</tr>
+
+<tr>
+    <th>Internship End Date</th>
+    <td>March 26, 2026</td>
+</tr>
+
+<tr>
+    <th>Location</th>
+    <td>Occidental Mindoro State College (OMSC)</td>
+</tr>
+
+<tr>
+    <th>Department</th>
+    <td>BSIT Department</td>
+</tr>
+
+<tr>
+    <th>Instructor</th>
+    <td>Ariel R. Manuel, MSIT</td>
+</tr>
+
+<tr>
+    <th>Position</th>
+    <td>OJT Laboratory Custodian</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- PERFORMANCE SUMMARY -->
+<div class="chapter-box">
+
+<h3>Performance Summary</h3>
+
+<p>
+During the internship period, the trainee demonstrated responsibility, discipline, and willingness to learn in performing assigned tasks inside the laboratory.
+The trainee was able to assist in technical troubleshooting, computer maintenance, software installation, laboratory monitoring, and student assistance activities.
+</p>
+
+<p>
+The internship experience helped improve technical knowledge, communication skills, teamwork, and adaptability in a real working environment.
+The trainee also showed professionalism and dedication while performing daily responsibilities assigned by the supervisors and instructors.
+</p>
+
+</div>
+
+<!-- SELF-ASSESSMENT -->
+<div class="chapter-box">
+
+<h3>Self-Assessment</h3>
+
+<p>
+Click the button below to view the self-assessment document.
+</p>
+
+<!-- BUTTON -->
+<button class="view-btn" onclick="openImage()">
+    View Document
+</button>
+
+<!-- IMAGE MODAL -->
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+
+    <span class="close-btn" onclick="closeImage()">&times;</span>
+
+    <div class="modal-images">
+
+        <!-- IMAGE 1 -->
+        <img src="selfassessment1.jpg" class="modal-content">
+
+        <!-- IMAGE 2 -->
+        <img src="selfassessment2.jpg" class="modal-content">
+
+        <!-- IMAGE 3 -->
+        <img src="selfassessment3.jpg" class="modal-content">
+
+    </div>
+
+</div>
+
+</section>
+
+</div>
+
+<script>
+
+function openImage(){
+    document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeImage(){
+    document.getElementById("imageModal").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
